@@ -1,0 +1,72 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "Lucas Walger",
+      "email": "lucas@gmail.com",
+      "senha": "123456",
+      "tipo": "Administrador",
+      "imagemrul": "https://i.ytimg.com/vi/_S2ujaEH1p8/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AHAB4AC0AWKAgwIABABGGUgRChEMA8=&rs=AOn4CLDVkc_YP8I4k3uYjWPyaL4385N-pQ"
+    },
+
+    {
+      "id": 2,
+      "nome": "Satan o cão",
+      "email": "satancao@gmail.com",
+      "senha": "Satan123456",
+      "tipo": "Gerente",
+      "imagemrul": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRRvFbTS_4Juh7pVeVSXHxvdIzvf33XHhmPp6gwDfoDHFVnD3NVoqZ_F-tDm8FWMAb8t8&usqp=CAU"
+    },
+
+    {
+      "id": 2,
+      "nome": "Aberração",
+      "email": "aberracao@gmail.com",
+      "senha": "Aberracao123456",
+      "tipo": "Funcionário",
+      "imagemrul": "https://hypescience.com/wp-content/uploads/2010/10/animalfeio3.jpg"
+    }
+  ],
+  "produtos": [
+    {
+        "id": 1,
+        "SKU": "0123456789",
+        "nome": "Shampo Careca",
+        "descricao": "Shampo que fica careca ao usar",
+        "catergoria":"Saúde e Beleza",
+        "marca":"Cabeça Brilhante",
+        "medidas":"ml",
+        "tamanaho": 850,
+        "precoCusto": 0,
+        "precoVenda": 0,
+        "quantidade": 20,
+        "fornecedor":"Brilhoso e ilustrado",
+        "imagemrul": "https://static.vecteezy.com/ti/fotos-gratis/t2/46460517-careca-europeu-homem-lavagens-dele-cabeca-dentro-a-chuveiro-com-espuma-e-pano-de-prato-levando-cuidado-do-a-limpeza-do-dele-corpo-dentro-a-chuveiro-foto.jpg"
+    }
+  ],
+  "categoria": [
+         {
+          "id": 1,
+          "nome": "Saúde e Beleza"
+        }
+  ],
+  "clientes": [
+        {
+         "id": 1,
+         "nome": "Zé do SHape de Testosterona",
+         "email": "zetestosterona@gmail.com",
+         "documento":"123.456.789-00",
+         "tipo":"PF",
+         "telefone":"(11) 91234-5678",
+         "dataNascimento":"1990-10-01",
+         "endereco":{"cep":"01234-567",
+                     "logradouro":"Rua dos Broxas, 1",
+                     "complemento":"Apto 101",
+                     "bairo":"Esquisofrenia",
+                     "cidade":"Pau da Goiaba",
+                     "uf":"SA"
+                   },
+                   "status":"Ativo"
+        }
+  ]
+}

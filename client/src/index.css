@@ -1,0 +1,11 @@
+.App {
+  background-color: (231, 231, 231);
+}
+
+.error {
+  color: red;
+  font-size: 20px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
