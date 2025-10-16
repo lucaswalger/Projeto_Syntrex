@@ -83,14 +83,15 @@ const Login = () => {
       {/* Logo no topo */}
       <div
       className="bg-white w-100 d-block position-absolute top-0"
-       style={{height:"70px"}}
+       style={{height:"80px"}}
       >
         <img
           src={logoPath}
           alt="Syntrex"
-          style={{ height: "100px", marginRight: "8px",  position: "absolute",
-          top: "0px",
+          style={{ height: "50px", marginRight: "8px",  position: "absolute",
+          top: "15px",
           left: "40px",
+        
           
         }}
           onError={(e) => {
@@ -98,7 +99,6 @@ const Login = () => {
             e.currentTarget.style.display = 'none';
           }}
         />
-        <h4 style={{ color: "#ffffff", margin: 0, fontWeight: "700" }}>SYNTREX</h4>
       </div>
 
       <Container
@@ -225,7 +225,7 @@ const Login = () => {
           fontSize: "12px",
         }}
       >
-        syntrex.com
+        syntrex.com.br
       </p>
     </div>
   );
