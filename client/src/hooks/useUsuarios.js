@@ -2,9 +2,15 @@
 const url = "http://localhost:5000";
 
 //Importando o hook de useState para controlar as variáveis
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
+
+// Importar as informações do contexto autenticação de usuário
+import { AuthContext } from '../contexts/UserContext.jsx'
 
 export function useVerificaLogin() {
+  // Usa as variáveis de contexto do usuário
+  const { login } = useContext(AuthContext)
+
   //Variável para armazenar a lista de usuários
   const [usuarios, setUsuarios] = useState([]);
 
@@ -36,6 +42,8 @@ export function useVerificaLogin() {
     // Se o usuário existe, verifica se a senha está correta
     if(userToFind != undefined && userToFind.senha == data.senha){
         console.log("Usuário logado: ", userToFind.nome);
+        // Passa o usuário logado para o contexto
+        login(userToFind)
         return "Login efetuado com sucesso"
     }
     // Caso o usuário não exista ou senha esteja errada, retorna uma mensagem de erro
@@ -46,4 +54,3 @@ export function useVerificaLogin() {
 
   return { verificaLogin }
 }
-
